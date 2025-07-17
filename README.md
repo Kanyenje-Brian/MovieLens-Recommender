@@ -2,13 +2,13 @@
 <img width="2400" height="465" alt="image" src="https://github.com/user-attachments/assets/f20ac682-ca70-47a2-a20f-a00fd8338a0e" />
 
 This project aims to build a personalized movie recommendation system using the **MovieLens dataset**. It combines **collaborative filtering** and **content-based filtering** to produce movie recommendations for users. The system is designed to handle both regular users and new users with little or no rating history.
-<br>
+
 
 ## **Problem Statement** 
 Users on the StreamTime Films platform often struggle to discover content that matches their preferences due to the vast number of available options. With thousands of movies to choose from, users are often overwhelmed and find it difficult to locate movies that match their interests, especially since most don't scroll deeply or explore the site extensively. This results in user-frustration, decision fatigue and in some cases platform abandonment. 
 
 As a result, StreamTime Films faces a critical challenge in retaining users and maintaining long-term engagement, which directly impacts business sustainability. 
-<br>
+
 
 ## **Project Goal**
 
@@ -21,7 +21,7 @@ The goal of this project is to develop a personalized movie recommendation syste
 2. Investigate how users rate movies 
 3. Developing and evaluating advanced recommender models (e.g., collaborative filtering, matrix factorization, or hybrid methods).
 4. Explaining recommendation results, using example user profiles and insights derived from the model.
-<br>
+
 
 ## **Dataset Summary**
 
@@ -51,7 +51,7 @@ Most users have only rated a small number of movies, while a few users rate very
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/37a9efad-63df-4ce7-9f85-07ac10017518" />
 
 This histogram shows that most movies in our dataset have been rated by a very small number of users. This pattern confirms that we have a significant cold-start item problem.
-<br>
+
 
 ## **Modeling Approach**
 
@@ -62,7 +62,7 @@ This histogram shows that most movies in our dataset have been rated by a very 
 - **Hybrid Approach**: A weighted and a switching mechanism that combines collaborative and content-based filtering.
 
 Models were evaluated using **RMSE** on a held-out test set and through cross-validation.
-<br>
+
 
 ## **Results**
 
@@ -71,7 +71,7 @@ We used RMSE (Root Mean Squared Error) to compare model performance.
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/17519a30-21a5-4bfb-95d3-618ea55355f2" />
 
 The **SVD model** yielded the best results among the collaborative filtering models, and the hybrid approaches leverage its strengths.
-<br>
+
 
 ## **Business Recommendations**
 
@@ -79,11 +79,11 @@ The **SVD model** yielded the best results among the collaborative filtering mod
 2. Implement a weighted hybrid model to combine thestrengths of collaborative filtering and content-based filtering, improving recommendation diversity and accuracy. 
 3. Leverage the model insights to surface highly rated but under-watched movies and push them to relevant users increases exposure for lesser-known content
 4. Invest in encouraging users to contribute more high-quality tags which will help reduce noise and improve content discoverability for niche titles.
-<br>
+
 
 ## **Conclusion**
 This project demonstrates how a hybrid recommender system can address the content discovery problem on a platform like StreamTimeNow. By combining collaborative filtering and content-based techniques, we’re able to provide high-quality, personalized movie recommendations even for new users.
-<br>
+
 
 ## **For More Information**
 Please review our full analysis in our [Jupyter Notebook](https://github.com/Kanyenje-Brian/MovieLens-Recommender/blob/master/notebook.ipynb) or our [presentation](https://github.com/Kanyenje-Brian/MovieLens-Recommender/blob/master/Presentation.pdf).
@@ -96,7 +96,7 @@ For any additional questions, please contact:
 - **Kelvin Mutua** – [kelvinmutua787@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=kelvinmutua787@gmail.com)
 - **Hannah Nyambura** – [anngachuhipg1@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=anngachuhipg1@gmail.com)
 
-<br>
+
 
 ## **Project Structure**
 ```
