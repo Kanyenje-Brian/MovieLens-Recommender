@@ -40,13 +40,14 @@ The goal of this project is to develop a personalized movie recommendation syste
 ## **Exploratory Data Analysis (EDA)**
 Before building the recommendation models, we performed extensive EDA to understand the dataset better. Key insights included:
 ### - ***Distribution of movie ratings***
-<img width="1136" height="699" alt="image" src="https://github.com/user-attachments/assets/f0676eec-4ca0-4596-907f-4196da26979a" />
+<img width="600" height="335" alt="image" src="https://github.com/user-attachments/assets/f0676eec-4ca0-4596-907f-4196da26979a" />
 
 
 This histogram visualizes how users rate movies on our platform, showing a clear tendency towards positive feedback with significant peaks at higher rating values.
 
-### - ***Most popular movies and genres***
-<img width="650" height="337" alt="image" src="https://github.com/user-attachments/assets/93b8e2cc-23dd-489b-a9a0-e904b5941c5d" />
+### - ***Distribution of Number of Ratings per Movie***
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/37a9efad-63df-4ce7-9f85-07ac10017518" />
+
 
 This bar chart highlights the movies that have received the most ratings in the dataset. It provides insight into the most popular content among our user base
 
