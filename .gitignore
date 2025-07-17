@@ -7,7 +7,10 @@
 __pycache__/
 *.pyc
 #ignore jupyter notebook checkpoints which are just backups created automatically 
-.ipynb_checkpoints
+.ipynb_checkpoints/
+
+# ignore devcontainer as it a VS Code specific folder for development environments
+.devcontainer/
 
 #ignore virtual environment coz it is specific to the machine and other users should create their own 
 venv/
