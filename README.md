@@ -1,22 +1,18 @@
-# **Movie Recommendation System**
+# **STREAMTIME FILMS RECOMMENDATION SYSTEM**
+<img width="2400" height="465" alt="image" src="https://github.com/user-attachments/assets/f20ac682-ca70-47a2-a20f-a00fd8338a0e" />
 
 This project aims to build a personalized movie recommendation system using the **MovieLens dataset**. It combines **collaborative filtering** and **content-based filtering** to produce movie recommendations for users. The system is designed to handle both regular users and new users with little or no rating history.
 
-----
 
 ## **Problem Statement** 
+Users on the StreamTime Films platform often struggle to discover content that matches their preferences due to the vast number of available options. With thousands of movies to choose from, users are often overwhelmed and find it difficult to locate movies that match their interests, especially since most don't scroll deeply or explore the site extensively. This results in user-frustration, decision fatigue and in some cases platform abandonment. 
 
-Users on the StreamTimeNow platform often struggle to discover content that matches their preferences due to the vast number of available options. With thousands of movies to choose from, users are often overwhelmed and find it difficult to locate movies that match their interests, especially since most don't scroll deeply or explore the site extensively. This results in user-frustration, decision fatigue and in some cases platform abandonment. 
-
-As a result, StreamTimeNow faces a critical challenge in retaining users and maintaining long-term engagement, which directly impacts business sustainability. 
-
----
+As a result, StreamTime Films faces a critical challenge in retaining users and maintaining long-term engagement, which directly impacts business sustainability. 
 
 ## **Project Goal**
 
 The goal of this project is to develop a personalized movie recommendation system that suggests relevant movies to users based on their preferences in order to improve user satisfaction and engagement.
 
----
 
 ## **Project Objectives**
 
@@ -25,7 +21,6 @@ The goal of this project is to develop a personalized movie recommendation syste
 3. Developing and evaluating advanced recommender models (e.g., collaborative filtering, matrix factorization, or hybrid methods).
 4. Explaining recommendation results, using example user profiles and insights derived from the model.
 
----
 
 ## **Dataset Summary**
 
@@ -36,25 +31,24 @@ The goal of this project is to develop a personalized movie recommendation syste
   - `ratings.csv` – user-movie ratings
   - `tags.csv` – user-added tags for describing movies
 
----
 ## **Exploratory Data Analysis (EDA)**
 Before building the recommendation models, we performed extensive EDA to understand the dataset better. Key insights included:
 ### - ***Distribution of movie ratings***
-<img width="650" height="337" alt="image" src="https://github.com/user-attachments/assets/d76e2737-4e20-4c11-beac-3fbc310a71be" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/f0676eec-4ca0-4596-907f-4196da26979a" />
 
-This histogram visualizes how users rate movies on our platform, showing a clear tendency towards positive feedback with significant peaks at higher rating values.
+Many users tend to give positive ratings with the peak being around 4.0 and the mean around 3.5. shows us we have good positive feedback to learn from 
 
-### - ***Most popular movies and genres***
-<img width="650" height="337" alt="image" src="https://github.com/user-attachments/assets/93b8e2cc-23dd-489b-a9a0-e904b5941c5d" />
+### - ***Distribution of Number of Ratings per Movie***
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/22c025e8-c174-4fed-b755-ddcb88a082c8" />
 
-This bar chart highlights the movies that have received the most ratings in the dataset. It provides insight into the most popular content among our user base
+Most users have only rated a small number of movies, while a few users rate very many. This clearly shows the cold-start user challenge – many users don't have enough history for standard recommendations<img
 
-### - ***User rating distribution***
 
-<img width="650" height="337" alt="image" src="https://github.com/user-attachments/assets/ffbb3b4c-43c7-4ed2-a6bc-46a76a247fb3" />
+### - ***Distribution of Number of Ratings per Movie***
 
-This histogram illustrates the distribution of rating activity across our users. It clearly shows that many users have provided only a limited number of ratings, highlighting the significant 'cold-start user' challenge that our hybrid recommendation system is designed to address
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/37a9efad-63df-4ce7-9f85-07ac10017518" />
 
+This histogram shows that most movies in our dataset have been rated by a very small number of users. This pattern confirms that we have a significant cold-start item problem.
 
 ## **Modeling Approach**
 
@@ -67,39 +61,27 @@ This histogram illustrates the distribution of rating activity across our users.
 Models were evaluated using **RMSE** on a held-out test set and through cross-validation.
 
 
-## **Evaluation Metrics**
+## **Results**
 
 We used RMSE (Root Mean Squared Error) to compare model performance.
 
-| Model                | Average RMSE   |
-|---------------------|--------|
-| KNN Basic           | 0.9730   |
-| KNNWithMeans        | 0.9005   |
-| SVD (Collaborative)  | 0.8746   |
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/17519a30-21a5-4bfb-95d3-618ea55355f2" />
 
 The **SVD model** yielded the best results among the collaborative filtering models, and the hybrid approaches leverage its strengths.
 
 
 ## **Business Recommendations**
 
-1. ***Cold-Start Strategy for New Users***  
-   Use content-based filtering to recommend movies to new users based on selected genres or movie preferences during onboarding. This mitigates cold-start issues and improves first-time user satisfaction.
+1. Utilize the SVD model's accuracy to power personalized recommendations of movies to specific users.
+2. Implement a weighted hybrid model to combine thestrengths of collaborative filtering and content-based filtering, improving recommendation diversity and accuracy. 
+3. Leverage the model insights to surface highly rated but under-watched movies and push them to relevant users increases exposure for lesser-known content
+4. Invest in encouraging users to contribute more high-quality tags which will help reduce noise and improve content discoverability for niche titles.
 
-2. ***Hybrid Approach for Balanced Recommendations***  
-   Implement a weighted or switching hybrid model to combine the strengths of collaborative filtering and content-based filtering, improving recommendation diversity and accuracy.
-
-3. ***Promote Hidden Gems to Maximize Catalog Value***  
-   Leverage the model insights to surface highly rated but under-watched movies and push them to relevant users. This increases exposure for lesser-known content and improves catalog utilization across the platform.
-
-4. ***Improve Tag Quality to Enhance Discovery***
-Encourage more user tagging and curate high-quality, relevant tags to enrich movie metadata. This can improve the discoverability of niche content and increase recommendation precision, especially for long-tail or lesser-known titles.
-
-
+<br>
 ## **Conclusion**
 This project demonstrates how a hybrid recommender system can address the content discovery problem on a platform like StreamTimeNow. By combining collaborative filtering and content-based techniques, we’re able to provide high-quality, personalized movie recommendations even for new users.
 
-
-
+<br>
 ## **For More Information**
 Please review our full analysis in our [Jupyter Notebook](https://github.com/Kanyenje-Brian/MovieLens-Recommender/blob/master/notebook.ipynb) or our [presentation](https://github.com/Kanyenje-Brian/MovieLens-Recommender/blob/master/Presentation.pdf).
 
@@ -114,16 +96,27 @@ For any additional questions, please contact:
 
 ## **Project Structure**
 ```
+├── app/
+│   ├── api/
+│   │   ├── main.py
+│   ├── app/
+│   │   ├── streamlit.py
+│   ├── models/
+│   │   ├── cosine_sim.pkl
+│   │   ├── keras_model.h5
+│   │   ├── svd_model.pkl
 ├── data/
+│   ├── README.txt
+│   ├── links.csv
 │   ├── movies.csv
 │   ├── ratings.csv
-│   ├── tags.csv
-│   └── links.csv
-├── data_utils.py
+│   └── tags.csv
 ├── .gitignore
-├── notebook.ipynb
 ├── Presentation.pdf
-└── README.md
+├── Presentation.pptx
+├── README.md
+├── data_utils.py
+└── notebook.ipynb
 
 ```
 
