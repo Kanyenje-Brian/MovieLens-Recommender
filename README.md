@@ -3,20 +3,16 @@
 
 This project aims to build a personalized movie recommendation system using the **MovieLens dataset**. It combines **collaborative filtering** and **content-based filtering** to produce movie recommendations for users. The system is designed to handle both regular users and new users with little or no rating history.
 
-----
 
 ## **Problem Statement** 
 Users on the StreamTime Films platform often struggle to discover content that matches their preferences due to the vast number of available options. With thousands of movies to choose from, users are often overwhelmed and find it difficult to locate movies that match their interests, especially since most don't scroll deeply or explore the site extensively. This results in user-frustration, decision fatigue and in some cases platform abandonment. 
 
 As a result, StreamTime Films faces a critical challenge in retaining users and maintaining long-term engagement, which directly impacts business sustainability. 
 
----
-
 ## **Project Goal**
 
 The goal of this project is to develop a personalized movie recommendation system that suggests relevant movies to users based on their preferences in order to improve user satisfaction and engagement.
 
----
 
 ## **Project Objectives**
 
@@ -25,7 +21,6 @@ The goal of this project is to develop a personalized movie recommendation syste
 3. Developing and evaluating advanced recommender models (e.g., collaborative filtering, matrix factorization, or hybrid methods).
 4. Explaining recommendation results, using example user profiles and insights derived from the model.
 
----
 
 ## **Dataset Summary**
 
@@ -36,7 +31,6 @@ The goal of this project is to develop a personalized movie recommendation syste
   - `ratings.csv` – user-movie ratings
   - `tags.csv` – user-added tags for describing movies
 
----
 ## **Exploratory Data Analysis (EDA)**
 Before building the recommendation models, we performed extensive EDA to understand the dataset better. Key insights included:
 ### - ***Distribution of movie ratings***
@@ -83,11 +77,11 @@ The **SVD model** yielded the best results among the collaborative filtering mod
 3. Leverage the model insights to surface highly rated but under-watched movies and push them to relevant users increases exposure for lesser-known content
 4. Invest in encouraging users to contribute more high-quality tags which will help reduce noise and improve content discoverability for niche titles.
 
-
+<br>
 ## **Conclusion**
 This project demonstrates how a hybrid recommender system can address the content discovery problem on a platform like StreamTimeNow. By combining collaborative filtering and content-based techniques, we’re able to provide high-quality, personalized movie recommendations even for new users.
 
-
+<br>
 ## **For More Information**
 Please review our full analysis in our [Jupyter Notebook](https://github.com/Kanyenje-Brian/MovieLens-Recommender/blob/master/notebook.ipynb) or our [presentation](https://github.com/Kanyenje-Brian/MovieLens-Recommender/blob/master/Presentation.pdf).
 
