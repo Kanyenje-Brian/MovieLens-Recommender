@@ -60,7 +60,7 @@ This histogram shows that most movies in our dataset have been rated by a very 
 
 Models were evaluated using **RMSE** on a held-out test set and through cross-validation.
 
-
+<br><br><br><br><br>
 ## **Results**
 
 We used RMSE (Root Mean Squared Error) to compare model performance.
@@ -69,7 +69,7 @@ We used RMSE (Root Mean Squared Error) to compare model performance.
 
 The **SVD model** yielded the best results among the collaborative filtering models, and the hybrid approaches leverage its strengths.
 
-
+<br><br><br><br><br>
 ## **Business Recommendations**
 
 1. Utilize the SVD model's accuracy to power personalized recommendations of movies to specific users.
@@ -81,7 +81,7 @@ The **SVD model** yielded the best results among the collaborative filtering mod
 ## **Conclusion**
 This project demonstrates how a hybrid recommender system can address the content discovery problem on a platform like StreamTimeNow. By combining collaborative filtering and content-based techniques, we’re able to provide high-quality, personalized movie recommendations even for new users.
 
-<br>
+<br><br><br><br><br><br>
 ## **For More Information**
 Please review our full analysis in our [Jupyter Notebook](https://github.com/Kanyenje-Brian/MovieLens-Recommender/blob/master/notebook.ipynb) or our [presentation](https://github.com/Kanyenje-Brian/MovieLens-Recommender/blob/master/Presentation.pdf).
 
