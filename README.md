@@ -1,4 +1,5 @@
-# **Movie Recommendation System**
+# **STREAMTIME FILMS RECOMMENDATION SYSTEM**
+<img width="2400" height="465" alt="image" src="https://github.com/user-attachments/assets/f20ac682-ca70-47a2-a20f-a00fd8338a0e" />
 
 This project aims to build a personalized movie recommendation system using the **MovieLens dataset**. It combines **collaborative filtering** and **content-based filtering** to produce movie recommendations for users. The system is designed to handle both regular users and new users with little or no rating history.
 
@@ -73,45 +74,19 @@ We used RMSE (Root Mean Squared Error) to compare model performance.
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/17519a30-21a5-4bfb-95d3-618ea55355f2" />
 
-
 The **SVD model** yielded the best results among the collaborative filtering models, and the hybrid approaches leverage its strengths.
 
 
 ## **Business Recommendations**
 
-Utilize the SVD Model's Accuracy to power Personalized
-Recommendations of movies to specific users  
-Rating Predictions: 
-<img width="629" height="118" alt="image" src="https://github.com/user-attachments/assets/b2396f40-ccfb-4174-b8f6-a2b300e519dc" />
-
-Implement a weighted hybrid model to combine the
-strengths of collaborative filtering and content-based 
-filtering, improving recommendation diversity and accuracy. 
-<img width="636" height="118" alt="image" src="https://github.com/user-attachments/assets/b0934f7d-016c-4d06-91cb-a670fb55359c" />
-
-
-Leverage the model insights to surface highly rated but under-watched movies and push them to relevant users increases exposure for lesser-known content
-<img width="1602" height="49" alt="image" src="https://github.com/user-attachments/assets/a6afb42d-7bc6-4122-bcb7-21f6be4b8ceb" />
-
-Invest in encouraging users to contribute more high-quality tags which will help reduce noise and improve content discoverability for niche titles.
-<img width="2301" height="74" alt="image" src="https://github.com/user-attachments/assets/630eb7fb-4b60-4403-a1d3-f8b319caf157" />
-
-1. ***Cold-Start Strategy for New Users***  
-   Use content-based filtering to recommend movies to new users based on selected genres or movie preferences during onboarding. This mitigates cold-start issues and improves first-time user satisfaction.
-
-2. ***Hybrid Approach for Balanced Recommendations***  
-   Implement a weighted or switching hybrid model to combine the strengths of collaborative filtering and content-based filtering, improving recommendation diversity and accuracy.
-
-3. ***Promote Hidden Gems to Maximize Catalog Value***  
-   Leverage the model insights to surface highly rated but under-watched movies and push them to relevant users. This increases exposure for lesser-known content and improves catalog utilization across the platform.
-
-4. ***Improve Tag Quality to Enhance Discovery***
-Encourage more user tagging and curate high-quality, relevant tags to enrich movie metadata. This can improve the discoverability of niche content and increase recommendation precision, especially for long-tail or lesser-known titles.
+1. Utilize the SVD model's accuracy to power personalized recommendations of movies to specific users.
+2. Implement a weighted hybrid model to combine thestrengths of collaborative filtering and content-based filtering, improving recommendation diversity and accuracy. 
+3. Leverage the model insights to surface highly rated but under-watched movies and push them to relevant users increases exposure for lesser-known content
+4. Invest in encouraging users to contribute more high-quality tags which will help reduce noise and improve content discoverability for niche titles.
 
 
 ## **Conclusion**
 This project demonstrates how a hybrid recommender system can address the content discovery problem on a platform like StreamTimeNow. By combining collaborative filtering and content-based techniques, we’re able to provide high-quality, personalized movie recommendations even for new users.
-
 
 
 ## **For More Information**
