@@ -6,9 +6,9 @@ This project aims to build a personalized movie recommendation system using the 
 
 ## **Problem Statement** 
 
-Users on the StreamTimeNow platform often struggle to discover content that matches their preferences due to the vast number of available options. With thousands of movies to choose from, users are often overwhelmed and find it difficult to locate movies that match their interests, especially since most don't scroll deeply or explore the site extensively. This results in user-frustration, decision fatigue and in some cases platform abandonment. 
+Users on the StreamTime Films platform often struggle to discover content that matches their preferences due to the vast number of available options. With thousands of movies to choose from, users are often overwhelmed and find it difficult to locate movies that match their interests, especially since most don't scroll deeply or explore the site extensively. This results in user-frustration, decision fatigue and in some cases platform abandonment. 
 
-As a result, StreamTimeNow faces a critical challenge in retaining users and maintaining long-term engagement, which directly impacts business sustainability. 
+As a result, StreamTime Films faces a critical challenge in retaining users and maintaining long-term engagement, which directly impacts business sustainability. 
 
 ---
 
@@ -114,16 +114,27 @@ For any additional questions, please contact:
 
 ## **Project Structure**
 ```
+├── app/
+│   ├── api/
+│   │   ├── main.py
+│   ├── app/
+│   │   ├── streamlit.py
+│   ├── models/
+│   │   ├── cosine_sim.pkl
+│   │   ├── keras_model.h5
+│   │   ├── svd_model.pkl
 ├── data/
+│   ├── README.txt
+│   ├── links.csv
 │   ├── movies.csv
 │   ├── ratings.csv
-│   ├── tags.csv
-│   └── links.csv
-├── data_utils.py
+│   └── tags.csv
 ├── .gitignore
-├── notebook.ipynb
 ├── Presentation.pdf
-└── README.md
+├── Presentation.pptx
+├── README.md
+├── data_utils.py
+└── notebook.ipynb
 
 ```
 
