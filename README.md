@@ -9,10 +9,11 @@ Users on the StreamTime Films platform often struggle to discover content that m
 
 As a result, StreamTime Films faces a critical challenge in retaining users and maintaining long-term engagement, which directly impacts business sustainability. 
 
+
 ## **Project Goal**
 
 The goal of this project is to develop a personalized movie recommendation system that suggests relevant movies to users based on their preferences in order to improve user satisfaction and engagement.
-
+<br>
 
 ## **Project Objectives**
 
@@ -30,6 +31,7 @@ The goal of this project is to develop a personalized movie recommendation syste
   - `movies.csv` – movie titles + genres
   - `ratings.csv` – user-movie ratings
   - `tags.csv` – user-added tags for describing movies
+<br>
 
 ## **Exploratory Data Analysis (EDA)**
 Before building the recommendation models, we performed extensive EDA to understand the dataset better. Key insights included:
@@ -49,6 +51,7 @@ Most users have only rated a small number of movies, while a few users rate very
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/37a9efad-63df-4ce7-9f85-07ac10017518" />
 
 This histogram shows that most movies in our dataset have been rated by a very small number of users. This pattern confirms that we have a significant cold-start item problem.
+
 
 ## **Modeling Approach**
 
@@ -77,11 +80,11 @@ The **SVD model** yielded the best results among the collaborative filtering mod
 3. Leverage the model insights to surface highly rated but under-watched movies and push them to relevant users increases exposure for lesser-known content
 4. Invest in encouraging users to contribute more high-quality tags which will help reduce noise and improve content discoverability for niche titles.
 
-<br>
+
 ## **Conclusion**
 This project demonstrates how a hybrid recommender system can address the content discovery problem on a platform like StreamTimeNow. By combining collaborative filtering and content-based techniques, we’re able to provide high-quality, personalized movie recommendations even for new users.
 
-<br>
+
 ## **For More Information**
 Please review our full analysis in our [Jupyter Notebook](https://github.com/Kanyenje-Brian/MovieLens-Recommender/blob/master/notebook.ipynb) or our [presentation](https://github.com/Kanyenje-Brian/MovieLens-Recommender/blob/master/Presentation.pdf).
 
@@ -91,7 +94,8 @@ For any additional questions, please contact:
 - **Calistus Mwonga** – [calistusmwonga@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=calistusmwonga@gmail.com)  
 - **Samwel Kipkemboi** – [samkemboi201@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=samkemboi201@gmail.com)  
 - **Kelvin Mutua** – [kelvinmutua787@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=kelvinmutua787@gmail.com)
-- **Hannah Nyambura** – [anngachuhipg1@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=anngachuhipg1@gmail.com)  
+- **Hannah Nyambura** – [anngachuhipg1@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=anngachuhipg1@gmail.com)
+
 
 
 ## **Project Structure**
