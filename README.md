@@ -42,21 +42,19 @@ Before building the recommendation models, we performed extensive EDA to underst
 ### - ***Distribution of movie ratings***
 <img width="600" height="335" alt="image" src="https://github.com/user-attachments/assets/f0676eec-4ca0-4596-907f-4196da26979a" />
 
-
-This histogram visualizes how users rate movies on our platform, showing a clear tendency towards positive feedback with significant peaks at higher rating values.
+Many users tend to give positive ratings with the peak being around 4.0 and the mean around 3.5. shows us we have good positive feedback to learn from 
 
 ### - ***Distribution of Number of Ratings per Movie***
+<img width="550" height="350" alt="image" src="https://github.com/user-attachments/assets/22c025e8-c174-4fed-b755-ddcb88a082c8" />
+
+Most users have only rated a small number of movies, while a few users rate very many. This clearly shows the cold-start user challenge – many users don't have enough history for standard recommendations<img
+
+
+### - ***Distribution of Number of Ratings per Movie***
+
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/37a9efad-63df-4ce7-9f85-07ac10017518" />
 
-
-This bar chart highlights the movies that have received the most ratings in the dataset. It provides insight into the most popular content among our user base
-
-### - ***User rating distribution***
-
-<img width="650" height="337" alt="image" src="https://github.com/user-attachments/assets/ffbb3b4c-43c7-4ed2-a6bc-46a76a247fb3" />
-
-This histogram illustrates the distribution of rating activity across our users. It clearly shows that many users have provided only a limited number of ratings, highlighting the significant 'cold-start user' challenge that our hybrid recommendation system is designed to address
-
+This histogram shows that most movies in our dataset have been rated by a very small number of users. This pattern confirms that we have a significant cold-start item problem.
 
 ## **Modeling Approach**
 
